@@ -2,7 +2,7 @@
 
 # local env files
 env
-# .env
+.env
 __pycache__
 
 # macOS
