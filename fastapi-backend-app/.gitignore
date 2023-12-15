@@ -1,0 +1,10 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# local env files
+env
+# .env
+__pycache__
+
+# macOS
+.DS_Store
+*.pem

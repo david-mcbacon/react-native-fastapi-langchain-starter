@@ -1,0 +1,13 @@
+version: '3'
+services:
+  fastapi-backend:
+    build: ./fastapi-backend-app
+    ports:
+      - '8000:8000'
+    restart: always
+    container_name: fastapi-backend
+    hostname: fastapi-backend
+    volumes:
+      # for development purposes, hot reload
+      - ./fastapi-backend-app:/src
+    command: ./scripts/start-server.sh
